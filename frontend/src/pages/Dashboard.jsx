@@ -60,6 +60,12 @@ const Dashboard = () => {
     return (
         <div className="min-h-screen bg-background">
             <Navbar />
+
+            {user && (
+                <div className="container max-w-screen-2xl py-4 px-6 md:px-12 lg:px-24">
+                    <h2 className="text-2xl font-bold tracking-tight">Welcome, {user.username} 👋</h2>
+                </div>
+            )}
             <main className="container max-w-screen-2xl py-8 px-6 md:px-12 lg:px-24">
                 <div className="grid gap-8 lg:grid-cols-[1fr_320px]">
                     {/* Main Content */}

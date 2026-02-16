@@ -24,9 +24,7 @@ const Navbar = () => {
                     <nav className="flex items-center space-x-2">
                         {user ? (
                             <>
-                                <span className="text-sm font-medium text-muted-foreground mr-2">
-                                    Welcome, {user.username}
-                                </span>
+
                                 <Button variant="ghost" size="sm" onClick={() => navigate('/dashboard')}>
                                     Dashboard
                                 </Button>
