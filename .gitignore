@@ -3,3 +3,7 @@ dist/
 .env
 .DS_Store
 *.log
+*.md
+.gitignore
+Frontend_Developer_Task.pdf
+Frontend Developer Task.pdf
