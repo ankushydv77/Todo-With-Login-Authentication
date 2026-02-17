@@ -25,7 +25,7 @@ function App() {
     <Router>
       <AuthProvider>
         <Routes>
-          <Route path="login" element={<PublicRoute></Login /></PublicRoute>} />
+          <Route path="/login" element={<PublicRoute><Login /></PublicRoute>} />
           <Route path="/register" element={<PublicRoute><Register /></PublicRoute>} />
           <Route path="/dashboard" element={
             <ProtectedRoute>

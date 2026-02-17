@@ -8,15 +8,16 @@ const db = require('./database');
 
 const app = express();
 
-app.use(cors({
-    origin: "https://todo-with-login-authentication.vercel.app",
+app.options(/.*/, cors({
+    origin: ["http://localhost:3000", "https://todo-with-login-authentication.vercel.app"],
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true
 }));
 
-app.options('*', cors({
-  origin: "https://todo-with-login-authentication.vercel.app",
-  credentials: true
+app.use(cors({
+    origin: ["http://localhost:3000", "https://todo-with-login-authentication.vercel.app"],
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true
 }));
 
 app.use(express.json());
