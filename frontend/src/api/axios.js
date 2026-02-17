@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-    baseURL: import.meta.env.VITE_API_URL || 'https://todo-with-login-authentication.onrender.com/api',
+    baseURL: import.meta.env.VITE_API_URL || '/api',
 });
 
 // Add a request interceptor to include the auth token
